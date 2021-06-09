@@ -1,0 +1,150 @@
+/* / RESETANDO ESTILO DA PÁGINA  */
+body,
+p,
+h1,
+ul,
+li,
+blockquote {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  font-family: "Vollkorn", Georgia, serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ESTRUTURA GERAL */
+
+.estrutura {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  background-color: #fdf1eb;
+  column-gap: 30px;
+  grid-template-columns: 220px auto;
+  grid-template-areas: "sideBar conteudo";
+}
+
+.side-menu {
+  grid-area: sideBar;
+}
+
+.conteudo {
+  grid-area: conteudo;
+}
+
+/* HEADER */
+
+.logo-texto {
+  line-height: 35px;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 220px;
+  height: 68px;
+  background-image: linear-gradient(to bottom, #ffb354 0%, #ee7a3a 100%);
+}
+
+.logo-texto span {
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 1.875rem;
+}
+
+.header-conteudo {
+  height: 68px;
+  background-color: #fdf1eb;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-items: end;
+}
+
+.header {
+  font-family: Roboto;
+  font-weight: 400;
+}
+
+.header span {
+  font-size: 0.875rem;
+  color: #725c5c;
+  line-height: 16.41px;
+}
+
+.header p {
+  font-family: Roboto;
+  font-size: 1.375rem;
+  line-height: 25.78px;
+  color: #725c5c;
+}
+
+.linguagem-perfil {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  justify-content: space-evenly;
+}
+
+.linguagem {
+  width: 97px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border: 1px solid #cccccc;
+  box-sizing: border-box;
+  border-radius: 3px;
+}
+
+.linguagem span {
+  font-family: Quicksand;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 17.5px;
+}
+
+.perfil {
+  display: flex;
+  justify-self: center;
+}
+
+.conteudo-perfil {
+  display: grid;
+  text-align: end;
+  margin-right: 28px;
+}
+
+.conteudo-perfil span {
+  font-family: Quicksand;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 14.5px;
+}
+
+.conteudo-perfil span:last-child {
+  font-size: 0.75rem;
+  line-height: 15px;
+}
+
+.imagem {
+  display: flex;
+}
+.img-notificacao {
+  z-index: 1;   
+  margin-right: -35px;
+  margin-top: -4px;
+}
+
+
+.img-perfil {
+  z-index: 0;
+
+}
