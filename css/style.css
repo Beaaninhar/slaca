@@ -27,21 +27,21 @@ a {
   width: 100%;
   height: 100%;
   display: grid;
-  background-color: #fdf1eb;
-  column-gap: 30px;
   grid-template-columns: 220px auto;
   grid-template-areas: "sideBar conteudo";
 }
 
 .side-menu {
   grid-area: sideBar;
+  height: 100vh;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
 }
 
 .conteudo {
   grid-area: conteudo;
 }
 
-/* HEADER */
+/* SIDE MENU */
 
 .logo-texto {
   line-height: 35px;
@@ -60,11 +60,47 @@ a {
   font-size: 1.875rem;
 }
 
+.conteudo-side-bar ul {
+  display: flex;
+  flex-direction: column;
+}
+.conteudo-side-bar li {
+  border-bottom: 1px solid #e7e7e7;
+  display: flex;
+}
+
+.conteudo-side-bar li p {
+  font-family: Quicksand;
+  color: #725c5c;
+  font-weight: 400;
+  font-size: 0.938rem;
+  line-height: 18.75px;
+  height: 35px;
+  margin-left: 24px;
+  display: flex;
+  align-items: center;
+}
+
+.conteudo-side-bar li:hover {
+  background: #fdf1eb;
+}
+
+.conteudo-side-bar li:hover::before {
+  background-image: linear-gradient(to bottom, #ffb354 1000%, #ee7a3a 100%);
+  content: "";
+  display: inline-block;
+  height: 33px;
+  width: 5px;
+  margin-right: 10px;
+}
+
+/* HEADER */
+
 .header-conteudo {
   height: 68px;
   background-color: #fdf1eb;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1.06fr 1fr;
   align-items: center;
   justify-items: end;
 }
@@ -137,14 +173,58 @@ a {
 .imagem {
   display: flex;
 }
+
 .img-notificacao {
-  z-index: 1;   
+  z-index: 1;
   margin-right: -35px;
   margin-top: -4px;
 }
 
-
 .img-perfil {
   z-index: 0;
+}
 
+/* CONTEÚDO DE CIMA */
+
+.titulo-video {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: center;
+  justify-items: flex-start;
+  margin-left: 30px;
+
+}
+
+.titulo {
+  margin: 15px 0px;
+}
+
+.titulo p {
+  font-family: Roboto;
+  font-weight: 900;
+  font-size: 1.25rem;
+  line-height: 25px;
+  width: 715px;
+  color: #ed7839;
+}
+
+.botoes {
+  display: flex;
+  justify-self: center;
+}
+
+.download img {
+  width: 120px;
+  height: 31px;
+}
+
+.favoritar img {
+  width: 43px;
+  height: 31px;
+  margin: 0 5px;
+}
+
+.doi img {
+  width: 43px;
+  height: 31px;
 }
