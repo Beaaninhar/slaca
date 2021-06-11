@@ -366,22 +366,21 @@ a {
   font-family: Quicksand;
   font-weight: 700;
   font-size: 0.875rem;
-  color: #ED7839;
+  color: #ed7839;
   line-height: 22.75px;
-
 }
 
 /* DISCUSSÃO */
 
 .discussao {
   width: 1058px;
+  height: 100%;
   border: 1px solid #e7e7e7;
   display: flex;
   flex-direction: column;
   margin-left: 30px;
   margin-bottom: 30px;
   border-radius: 3px;
-
 }
 
 .titulo-discussao {
@@ -466,6 +465,20 @@ a {
   margin-top: 20px;
 }
 
+.linha-topico-comentario {
+  width: 1027px;
+  margin-left: 20px;
+  width: 1016px;
+  margin-left: 20px;
+  margin-top: -20px;
+  margin-bottom: 20px;
+}
+
+.linha-topico-comentario hr{
+  border: 1px solid #e7e7e7;
+  background: #e7e7e7;
+}
+
 .topico-comentario span {
   font-family: Quicksand;
   font-weight: 400;
@@ -474,6 +487,8 @@ a {
   line-height: 17.5px;
   color: #5c5c5c;
 }
+
+
 
 .assunto {
   margin-left: 20px;
@@ -588,10 +603,9 @@ a {
   line-height: 19.25px;
   color: #ed7839;
   text-decoration-line: underline;
-
 }
 
-.botao-criar-novo-topico  {
+.botao-criar-novo-topico {
   z-index: 10;
 }
 
@@ -620,10 +634,11 @@ a {
   background: #e7e7e7;
 }
 
-.feedback{
+.feedback {
   display: flex;
   flex-direction: column;
   margin-top: 64px;
+  margin-bottom: 19px;
 }
 
 .feedback-background {
@@ -635,7 +650,7 @@ a {
   z-index: 1;
 }
 
-.conteudo-feedback p{
+.conteudo-feedback p {
   font-family: Quicksand;
   font-weight: 700;
   font-size: 16px;
@@ -645,10 +660,217 @@ a {
 }
 
 .conteudo-feedback span {
-  font-family: Quicksand;   /* OBS: Fonte Segoe UI não encontrada para baixar, por isso, houve a troca de fontes para uma parecida*/
+  font-family: Quicksand; /* OBS: Fonte Segoe UI não encontrada para baixar, por isso, houve a troca de fontes para uma parecida*/
   font-weight: 400;
   font-size: 0.875rem;
   line-height: 18.62px;
   text-decoration-line: underline;
-  color: #ED7839;
+  color: #ed7839;
+}
+
+/* COMENTÁRIOS */
+
+.comentarios {
+  width: 1028px;
+  border-right: 4px;
+  width: 1028px;
+  border-right: 4px;
+  display: grid;
+  align-self: center;
+  grid-row-gap: 22px;
+}
+
+.primeiro-comentario {
+  padding: 21px;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.12);
+}
+
+.assunto-comentario p {
+  font-family: Quicksand;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 20px;
+  color: #ed7839;
+}
+
+.assunto-comentario span {
+  font-family: Quicksand;
+  font-weight: 500;
+  font-size: 0.75rem;
+}
+
+.comentario-conteudo p {
+  font-family: Quicksand;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 17.5px;
+  margin: 10px 0px;
+}
+
+.interacao {
+  display: flex;
+  justify-content: space-between;
+  width: 165px;
+  height: 19px;
+}
+
+.interacao span {
+  font-family: Quicksand;
+  font-weight: 350;
+  font-size: 0.875rem;
+  line-height: 18.62px;
+}
+
+.segundo-comentario {
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+}
+
+.segundo-comentario hr {
+  border: 1px solid #e7e7e7;
+  background: #e7e7e7;
+}
+
+.bloco-comentario {
+  padding: 21px 21px 0px 21px;
+}
+
+
+
+.respostas {
+  margin-top: -8px;
+  display: none;
+    flex-direction: column;
+}
+
+.resposta-autor {
+  background-color: #f8f8f8;
+  padding: 0px 21px 0px 21px;
+  border-bottom: 1px solid #e7e7e7;
+
+}
+
+.resposta-autor p {
+  font-family: Quicksand;
+  font-weight: 700;
+  font-size: 0.75rem;
+  line-height: 15px;
+  color: #5c5c5c;
+  display: flex;
+  justify-content: space-between;
+}
+
+.resposta-autor p span {
+  font-family: Quicksand;
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 17.5px;
+  color: #ed7839;
+  display: flex;
+  align-items: center;
+}
+
+.resposta-autor p span img {
+  margin: 0px 10px;
+}
+
+.resposta-autor p:last-child {
+  font-family: Quicksand;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 17.5px;
+  color: #4d4d4d;
+}
+
+.resposta-autor {
+  height: 131px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.resposta-comentario {
+  height: 131px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  padding: 0px 21px 0px 21px;
+
+}
+
+.resposta-comentario p:first-child {
+  font-family: Quicksand;
+    font-weight: 700;
+    font-size: 0.75rem;
+    line-height: 15px;
+    color: #5c5c5c;
+    display: flex;
+    justify-content: space-between;
+}
+
+.resposta-comentario p {
+  font-family: Quicksand;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 17.5px;
+  color: #4d4d4d;
+}
+
+.resposta-coautor {
+  background-color: #f8f8f8;
+  padding: 0px 21px 0px 21px;
+  border-bottom: 1px solid #e7e7e7;
+
+}
+
+.resposta-coautor p:first-child {
+  font-family: Quicksand;
+  font-weight: 700;
+  font-size: 0.75rem;
+  line-height: 15px;
+  color: #5c5c5c;
+  display: flex;
+  justify-content: space-between;
+}
+
+.resposta-coautor p {
+  font-family: Quicksand;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 17.5px;
+  color:#4D4D4D;
+  display: flex;
+  align-items: center;
+}
+
+.resposta-coautor p span {
+  font-family: Quicksand;
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 17.5px;
+  color: #ed7839;
+  display: flex;
+  align-items: center;
+}
+
+.resposta-coautor p span img {
+  margin: 0px 10px;
+}
+.resposta-coautor p:last-child {
+  font-family: Quicksand;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 17.5px;
+  color: #4d4d4d;
+}
+
+.resposta-coautor {
+  height: 131px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+#respostaCoatorUltimo {
+  border-radius: 0px 4px;
 }

@@ -54,3 +54,13 @@ function novoComentario() {
 }
 
 botaoCriarNovoComentario.addEventListener('click', novoComentario)
+
+function verComentario() {
+  if (respostasComentarios.style.display === "flex") {
+    respostasComentarios.style.display = "none";
+  } else {
+    respostasComentarios.style.display = "flex";
+  }
+}
+
+const respostasComentarios = document.querySelector('#respostasComentarios');
