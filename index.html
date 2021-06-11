@@ -24,7 +24,7 @@
       </section>
 
       <div class="conteudo-side-bar">
-        <img src="imagens/logo.svg" alt="" />
+        <img src="imagens/logo.svg" alt="Logo Slaca 2019" />
         <ul>
           <li>
             <p>Apresentação</p>
@@ -62,7 +62,7 @@
 
         <div class="linguagem-perfil">
           <div class="linguagem">
-            <img src="imagens/language.svg" alt="Símbulo da terra" />
+            <img src="imagens/language.svg" alt="Símbolo da terra" />
             <span>PT, BR</span>
             <img src="imagens/dropdown.svg" alt="Seta para baixo" />
           </div>
@@ -73,10 +73,10 @@
             </div>
             <div class="imagem-completa-notificacao">
               <div class="img-notificacao">
-                <img src="./imagens/notification.svg" alt="imagem-notificação" />
+                <img src="./imagens/notification.svg" alt="Imagem de notificação" />
               </div>
               <div class="img-perfil">
-                <img src="./imagens/Imagem-perfil.svg" alt="imagem-perfil" />
+                <img src="./imagens/Imagem-perfil.svg" alt="Imagem de perfil" />
               </div>
             </div>
           </div>
@@ -92,12 +92,12 @@
           <div class="botoes">
             <div class="download">
               <a href="#" title="Titulo do video">
-                <img src="/imagens/download-button.svg" alt="Botão download" />
+                <img src="/imagens/download-button.svg" alt="Botão para download" />
               </a>
             </div>
             <div class="favoritar">
               <a href="#" title="Titulo do video">
-                <img src="/imagens/favorite-button.svg" alt="Botão favoritar" />
+                <img src="/imagens/favorite-button.svg" alt="Botão para favoritar" />
               </a>
             </div>
             <div class="doi">
@@ -113,9 +113,10 @@
 
         <div class="video-detalhe">
           <div class="video">
-            <img src="imagens/vídeo-apresentação.svg" alt="Video apresentação">
+            <img src="imagens/vídeo-apresentação.svg" alt="Video de apresentação">
           </div>
         </div>
+        
         <div class="detalhe">
           <section class="titulo-texto-detalhe">
             <p>Detalhes</p>
@@ -145,11 +146,11 @@
         </div>
       </div>
 
-      <div class="resumo">
-        <section onclick="lerMais()" class="titulo-resumo">
+      <div onclick="lerMais()" class="resumo" >
+        <section  class="titulo-resumo">
           <span>Resumo</span>
         </section>
-        <section onclick="lerMais()" class="conteudo-resumo">
+        <section class="conteudo-resumo">
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae turpis auctor, mollis felis ut,
             commodo turpis. Phasellus felis mauris, egestas eget cursus et, iaculis quis lacus. Fusce auctor eros sed
             magna ultricies gravida. Etiam aliquam dictum nisl, vel aliquet enim accumsan sit amet. Donec finibus nisi
@@ -188,9 +189,11 @@
       </div>
 
       <div class="discussao">
+
         <section class="titulo-discussao">
           <span>Discussões</span>
         </section>
+
         <div class="criar-topico" id="criarTopico">
           <span>Compartilhe suas ideias ou dúvidas com os autores!</span>
           <div class="topico-icons">
@@ -203,7 +206,7 @@
           <div class="botao-criar-topico" id="btnCriarTopico">
             <img src="imagens/botao-criar-topico.svg" alt="Botão criar tópico">
           </div>
-          <div class="linha">
+          <div class="linha-criar-topico">
             <hr>
           </div>
         </div>
@@ -217,7 +220,7 @@
           <div class="assunto-conteudo">
             <span>Conteúdo</span>
             <textarea cols="5" rows="5"></textarea>
-            <div class="botao-topico-comentario">
+            <div class="botao-comentario-enviar">
               <p><strong>B</strong>&nbsp; &nbsp;&nbsp;<i>I</i> </p>
               <button type="submit" id="bntEnviarComentario">ENVIAR</button>
             </div>
@@ -236,22 +239,41 @@
           <div class="botao-criar-novo-topico">
             <button type="submit" id="botaoCriarNovoComentario">Criar novo tópico</button>
           </div>
-          <div class="linha-criar-topico">
+          <div class="linha-criar-novo-topico">
             <hr>
           </div>
           <div class="feedback">
             <div class="conteudo-feedback">
-              <img src="imagens/icon-feedback.svg" alt="feedback do comentário">
+              <img src="imagens/icon-feedback.svg" alt="Imagem ">
               <p>Aguardando feedback dos autores</p>
               <span>Editar tópico</span>
             </div>
             <div class="feedback-background">
-              <img src="imagens/feedback.svg" alt="feedback do comentário">
+              <img src="imagens/feedback.svg" alt="Imagem que contem opacidace forte" />
             </div>
           </div>
         </div>
 
-        <script src="script.js"></script>
+        <div class="comentarios">
+          <div class="primeiro-comentario">
+            <section class="assunto-comentario">
+              <p>Assunto da pergunta aparece aqui</p>
+              <p>Carlos Henrique Santos</p>
+            </section>
+            <section class="comentario">
+              <p>Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto
+                de processo formativo situado impacto de processo formativo processo...</p>
+            </section>
+            <section class="interacao">
+              <img src="imagens/mais-informacoes.svg" alt="Três pontos">
+              <img src="imagens/favoritar.svg" alt="Quadrado com um coração dentro">
+            </section>
+          </div>
+        </div>
+
+      </div>
+
+      <script src="script.js"></script>
 </body>
 
 </html>

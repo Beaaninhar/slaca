@@ -1,6 +1,11 @@
 const pontos = document.querySelector("#pontos");
 const textoMais = document.querySelector("#mais");
 const textoLeiaMais = document.querySelector("#textoLeiaMais");
+const criarTopicos = document.querySelector("#criarTopico");
+const btnCriarTopico = document.querySelector("#btnCriarTopico");
+const topicoComentario = document.querySelector("#topicoComentario");
+const bntEnviarComentario = document.querySelector("#bntEnviarComentario");
+const topicoCriado = document.querySelector("#topicoCriado");
 
 function lerMais() {
   if (pontos.style.display === "none") {
@@ -14,10 +19,6 @@ function lerMais() {
   }
 }
 
-const criarTopicos = document.querySelector("#criarTopico");
-const btnCriarTopico = document.querySelector("#btnCriarTopico");
-const topicoComentario = document.querySelector("#topicoComentario");
-
 function topicoCriar() {
   if (criarTopicos.style.display === "none") {
     criarTopicos.style.display = "grid";
@@ -29,9 +30,6 @@ function topicoCriar() {
 }
 
 btnCriarTopico.addEventListener("click", topicoCriar);
-
-const bntEnviarComentario = document.querySelector("#bntEnviarComentario");
-const topicoCriado = document.querySelector("#topicoCriado");
 
 function enviarComentario() {
   if ((topicoComentario.style.display = "none")) {

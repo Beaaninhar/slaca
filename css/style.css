@@ -59,12 +59,14 @@ a {
   font-family: Roboto;
   font-weight: 700;
   font-size: 1.875rem;
+  line-height: 35.16px;
 }
 
 .conteudo-side-bar ul {
   display: flex;
   flex-direction: column;
 }
+
 .conteudo-side-bar li {
   border-bottom: 1px solid #e7e7e7;
   display: flex;
@@ -163,7 +165,7 @@ a {
   font-family: Quicksand;
   font-weight: 400;
   font-size: 0.875rem;
-  line-height: 14.5px;
+  line-height: 17.5px;
 }
 
 .conteudo-perfil span:last-child {
@@ -186,7 +188,7 @@ a {
   z-index: 0;
 }
 
-/* CONTEÚDO DE CIMA */
+/* VÍDEO E COLUNA DETALHES */
 
 .titulo-video {
   display: grid;
@@ -219,6 +221,7 @@ a {
   display: flex;
   justify-self: center;
 }
+
 .texto-botao {
   margin-top: 5px;
 }
@@ -229,6 +232,7 @@ a {
   font-size: 0.875rem;
   text-align: end;
   color: #ed7839;
+  line-height: 25px;
 }
 
 .download img {
@@ -265,7 +269,7 @@ a {
   border-bottom: 1px solid #e7e7e7;
 }
 
-.detalhe p {
+.titulo-texto-detalhe p {
   font-family: Roboto;
   font-weight: 500;
   font-size: 1.25rem;
@@ -323,6 +327,7 @@ a {
   margin-left: 30px;
   margin-bottom: 30px;
   cursor: pointer;
+  border-radius: 3px;
 }
 
 .titulo-resumo {
@@ -354,6 +359,7 @@ a {
   font-family: Quicksand;
   font-weight: 400;
   font-size: 0.875rem;
+  line-height: 22.75px;
 }
 
 #textoLeiaMais {
@@ -361,6 +367,8 @@ a {
   font-weight: 700;
   font-size: 0.875rem;
   color: #ED7839;
+  line-height: 22.75px;
+
 }
 
 /* DISCUSSÃO */
@@ -372,6 +380,8 @@ a {
   flex-direction: column;
   margin-left: 30px;
   margin-bottom: 30px;
+  border-radius: 3px;
+
 }
 
 .titulo-discussao {
@@ -389,7 +399,6 @@ a {
   color: #4e4e4e;
   align-self: center;
   margin-left: 15px;
-  border-radius: 5px;
 }
 
 /* CRIAR TÓPICO */
@@ -407,17 +416,8 @@ a {
   font-weight: 700;
   text-align: center;
   font-size: 0.875rem;
-  line-height: 21, 06px;
+  line-height: 21.09px;
   color: #ed7839;
-}
-
-.criar-topico p {
-  font-family: Quicksand;
-  font-weight: 400;
-  font-size: 0.875rem;
-  width: 626px;
-  text-align: center;
-  justify-self: center;
 }
 
 .topico-icons {
@@ -429,6 +429,16 @@ a {
   margin: 0px 40px;
 }
 
+.criar-topico p {
+  font-family: Quicksand;
+  font-weight: 400;
+  font-size: 0.875rem;
+  width: 626px;
+  text-align: center;
+  justify-self: center;
+  line-height: 19px;
+}
+
 .botao-criar-topico {
   display: flex;
   justify-content: center;
@@ -436,7 +446,7 @@ a {
   z-index: 1;
 }
 
-.linha {
+.linha-criar-topico {
   width: 1027px;
   z-index: 0;
   margin-top: -52px;
@@ -461,17 +471,20 @@ a {
   font-weight: 400;
   text-align: center;
   font-size: 0.875rem;
-  line-height: 21.06px;
+  line-height: 17.5px;
   color: #5c5c5c;
 }
 
 .assunto {
+  margin-left: 20px;
+}
+
+.assunto p {
   font-family: Roboto;
   font-weight: 700;
   font-size: 1rem;
   line-height: 18.75px;
   color: #ed7839;
-  margin-left: 20px;
 }
 
 .assunto input {
@@ -494,11 +507,13 @@ a {
   flex-direction: column;
   justify-self: flex-start;
 }
+
 .assunto-conteudo span {
   font-family: Roboto;
   text-align: start;
   font-weight: 700;
   font-size: 1rem;
+  line-height: 18.75px;
   color: #ed7839;
 }
 
@@ -507,7 +522,7 @@ a {
   border-radius: 3px;
 }
 
-.botao-topico-comentario {
+.botao-comentario-enviar {
   background: #eaf1f2;
   border: 1px solid #cccccc;
   height: 31px;
@@ -517,11 +532,11 @@ a {
   border-radius: 3px;
 }
 
-.botao-topico-comentario p:first-child {
+.botao-comentario-enviar p:first-child {
   margin-left: 15px;
 }
 
-.botao-topico-comentario button {
+.botao-comentario-enviar button {
   width: 205.1px;
   height: 31px;
   background-image: linear-gradient(to bottom, #ffb354 0%, #ee7a3a 100%);
@@ -554,7 +569,7 @@ a {
   font-weight: 700;
   text-align: center;
   font-size: 1.125rem;
-  line-height: 21, 09px;
+  line-height: 21.09px;
   color: #ed7839;
 }
 
@@ -564,7 +579,6 @@ a {
   font-size: 0.875rem;
   line-height: 19.25px;
   margin-bottom: 30px;
-
 }
 
 .conteudo-topico-criado span {
@@ -576,9 +590,11 @@ a {
   text-decoration-line: underline;
 
 }
+
 .botao-criar-novo-topico  {
   z-index: 10;
 }
+
 .botao-criar-novo-topico button {
   background-image: linear-gradient(to bottom, #ffb354 0%, #ee7a3a 100%);
   font-family: Quicksand;
@@ -593,13 +609,13 @@ a {
   margin-top: 45px;
 }
 
-.linha-criar-topico {
+.linha-criar-novo-topico {
   width: 1027px;
   z-index: 5;
   margin-top: -24px;
 }
 
-.linha-criar-topico hr {
+.linha-criar-novo-topico hr {
   border: 1px solid #e7e7e7;
   background: #e7e7e7;
 }
@@ -629,7 +645,7 @@ a {
 }
 
 .conteudo-feedback span {
-  font-family: Quicksand;
+  font-family: Quicksand;   /* OBS: Fonte Segoe UI não encontrada para baixar, por isso, houve a troca de fontes para uma parecida*/
   font-weight: 400;
   font-size: 0.875rem;
   line-height: 18.62px;
