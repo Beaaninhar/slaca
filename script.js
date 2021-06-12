@@ -6,6 +6,7 @@ const btnCriarTopico = document.querySelector("#btnCriarTopico");
 const topicoComentario = document.querySelector("#topicoComentario");
 const bntEnviarComentario = document.querySelector("#bntEnviarComentario");
 const topicoCriado = document.querySelector("#topicoCriado");
+const respostasComentarios = document.querySelector("#respostasComentarios");
 
 function lerMais() {
   if (pontos.style.display === "none") {
@@ -53,7 +54,7 @@ function novoComentario() {
   }
 }
 
-botaoCriarNovoComentario.addEventListener('click', novoComentario)
+botaoCriarNovoComentario.addEventListener("click", novoComentario);
 
 function verComentario() {
   if (respostasComentarios.style.display === "flex") {
@@ -63,4 +64,15 @@ function verComentario() {
   }
 }
 
-const respostasComentarios = document.querySelector('#respostasComentarios');
+const btnHamburguer = document.querySelector("#btn-hamburguer");
+const menu = document.querySelector("#sideMenu")
+
+console.log(btnHamburguer)
+
+console.log(menu)
+
+function abrirMenu() {
+  console.log(menu.classList.toggle('ativo'))
+}
+
+btnHamburguer.addEventListener("click", abrirMenu)
